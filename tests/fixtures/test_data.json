@@ -1,0 +1,94 @@
+{
+  "valid_note_urls": [
+    "https://www.xiaohongshu.com/explore/64a1b2c3d4e5f6g7h8i9j0k1",
+    "https://www.xiaohongshu.com/discovery/item/64a1b2c3d4e5f6g7h8i9j0k1",
+    "https://xhslink.com/abc123"
+  ],
+  "invalid_note_urls": [
+    "https://www.example.com/note/123",
+    "not_a_url",
+    ""
+  ],
+  "valid_user_urls": [
+    "https://www.xiaohongshu.com/user/profile/5e8b9c0d1f2a3b4c5d6e7f8g",
+    "https://www.xiaohongshu.com/user/profile/5e8b9c0d1f2a3b4c5d6e7f8g?xhsshare=abc"
+  ],
+  "invalid_user_urls": [
+    "https://www.example.com/user/123",
+    "invalid_url"
+  ],
+  "search_keywords": [
+    "美食",
+    "旅行",
+    "穿搭",
+    "护肤"
+  ],
+  "invalid_filenames": [
+    "test/file.txt",
+    "test\\file.txt",
+    "test:file.txt",
+    "test*file.txt",
+    "test?file.txt",
+    "test\"file.txt",
+    "test<file.txt",
+    "test>file.txt",
+    "test|file.txt"
+  ],
+  "valid_filenames": [
+    "test_file.txt",
+    "测试文件.txt",
+    "test-file_123.txt"
+  ],
+  "sample_cookies": {
+    "valid": "a1=test_value; webId=abc123; web_session=xyz789",
+    "invalid": "",
+    "malformed": "invalid_cookie_format"
+  },
+  "sample_progress_data": {
+    "completed_notes": [
+      "note_id_1",
+      "note_id_2",
+      "note_id_3"
+    ],
+    "total_count": 3,
+    "last_updated": "2024-01-01T12:00:00"
+  },
+  "export_formats": [
+    "excel",
+    "json",
+    "csv"
+  ],
+  "rate_limit_configs": [
+    {"rate": 1.0, "description": "1 request per second"},
+    {"rate": 3.0, "description": "3 requests per second"},
+    {"rate": 5.0, "description": "5 requests per second"}
+  ],
+  "retry_scenarios": [
+    {
+      "name": "network_timeout",
+      "exception": "requests.exceptions.Timeout",
+      "should_retry": true,
+      "max_retries": 3
+    },
+    {
+      "name": "connection_error",
+      "exception": "requests.exceptions.ConnectionError",
+      "should_retry": true,
+      "max_retries": 3
+    },
+    {
+      "name": "server_error_500",
+      "exception": "requests.exceptions.HTTPError",
+      "status_code": 500,
+      "should_retry": true,
+      "max_retries": 3
+    },
+    {
+      "name": "client_error_400",
+      "exception": "requests.exceptions.HTTPError",
+      "status_code": 400,
+      "should_retry": false,
+      "max_retries": 0
+    }
+  ]
+}

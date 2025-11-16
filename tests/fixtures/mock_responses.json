@@ -1,0 +1,147 @@
+{
+  "note_detail_success": {
+    "success": true,
+    "code": 0,
+    "msg": "success",
+    "data": {
+      "items": [
+        {
+          "id": "64a1b2c3d4e5f6g7h8i9j0k1",
+          "model_type": "note",
+          "note_card": {
+            "type": "normal",
+            "display_title": "测试笔记标题",
+            "user": {
+              "user_id": "user123",
+              "nickname": "测试用户",
+              "avatar": "https://example.com/avatar.jpg"
+            },
+            "interact_info": {
+              "liked_count": "100",
+              "collected_count": "50",
+              "comment_count": "20",
+              "share_count": "10"
+            },
+            "image_list": [
+              {
+                "url": "https://example.com/image1.jpg",
+                "width": 1080,
+                "height": 1440
+              },
+              {
+                "url": "https://example.com/image2.jpg",
+                "width": 1080,
+                "height": 1440
+              }
+            ],
+            "tag_list": [
+              {"name": "测试"},
+              {"name": "示例"}
+            ],
+            "time": 1704096000000,
+            "ip_location": "北京"
+          }
+        }
+      ]
+    }
+  },
+  "video_note_success": {
+    "success": true,
+    "code": 0,
+    "msg": "success",
+    "data": {
+      "items": [
+        {
+          "id": "video123456789",
+          "model_type": "note",
+          "note_card": {
+            "type": "video",
+            "display_title": "测试视频笔记",
+            "video": {
+              "consumer": {
+                "origin_video_key": "https://example.com/video.mp4"
+              },
+              "media": {
+                "video": {
+                  "master_url": "https://example.com/video.mp4"
+                }
+              }
+            },
+            "cover": {
+              "url": "https://example.com/cover.jpg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "search_notes_success": {
+    "success": true,
+    "code": 0,
+    "msg": "success",
+    "data": {
+      "items": [
+        {
+          "id": "search_note_1",
+          "model_type": "note",
+          "note_card": {
+            "display_title": "搜索结果1"
+          }
+        },
+        {
+          "id": "search_note_2",
+          "model_type": "note",
+          "note_card": {
+            "display_title": "搜索结果2"
+          }
+        }
+      ],
+      "has_more": true
+    }
+  },
+  "user_info_success": {
+    "success": true,
+    "code": 0,
+    "msg": "success",
+    "data": {
+      "user_id": "user123",
+      "nickname": "测试用户",
+      "avatar": "https://example.com/avatar.jpg",
+      "red_id": "test_red_id",
+      "gender": 1,
+      "ip_location": "北京",
+      "desc": "这是用户简介",
+      "follows": 100,
+      "fans": 500,
+      "interaction": 1000,
+      "tags": [
+        {"name": "美食"},
+        {"name": "旅行"}
+      ]
+    }
+  },
+  "api_error_response": {
+    "success": false,
+    "code": -1,
+    "msg": "请求失败",
+    "data": null
+  },
+  "rate_limit_error": {
+    "success": false,
+    "code": -100,
+    "msg": "请求过于频繁，请稍后再试",
+    "data": null
+  },
+  "auth_error": {
+    "success": false,
+    "code": -401,
+    "msg": "未授权，请检查Cookie",
+    "data": null
+  },
+  "not_found_error": {
+    "success": false,
+    "code": -404,
+    "msg": "笔记不存在或已被删除",
+    "data": null
+  }
+}
