@@ -6,7 +6,6 @@
   </a>
 </p>
 
-
 <div align="center">
     <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/python-3.7%2B-blue" alt="Python 3.7+">
@@ -14,94 +13,120 @@
     <a href="https://nodejs.org/zh-cn/">
         <img src="https://img.shields.io/badge/nodejs-18%2B-blue" alt="NodeJS 18+">
     </a>
+    <a href="https://github.com/cv-cat/Spider_XHS/releases">
+        <img src="https://img.shields.io/badge/version-2.2.0-green" alt="Version 2.2.0">
+    </a>
 </div>
-
-
 
 # Spider_XHS
 
-**✨ 专业的小红书数据采集解决方案，支持笔记爬取，保存格式为excel或者media**
+**✨ 专业的小红书数据采集解决方案 - 提供友好的GUI图形界面**
 
-**✨ 小红书全域运营解决方法，AI一键改写笔记（图文，视频）直接上传**
+**🎨 无需编程，开箱即用 | 三步式工作流程 | 智能反爬虫策略**
 
-## ⭐功能列表
+## ⚠️ 免责声明
 
-**⚠️ 任何涉及数据注入的操作都是不被允许的，本项目仅供学习交流使用，如有违反，后果自负**
+**本项目仅供学习交流使用，请勿用于商业用途或非法用途。使用本项目所产生的一切后果由使用者自行承担，与开发者无关。**
 
-| 模块           | 已实现                                                                             |
-|---------------|---------------------------------------------------------------------------------|
-| 小红书创作者平台 | ✅ 二维码登录<br/>✅ 手机验证码登录<br/>✅ 上传（图集、视频）作品<br/>✅查看自己上传的作品      |
-|    小红书PC    | ✅ 二维码登录<br/> ✅ 手机验证码登录<br/> ✅ 获取无水印图片<br/> ✅ 获取无水印视频<br/> ✅ 获取主页的所有频道<br/>✅ 获取主页推荐笔记<br/>✅ 获取某个用户的信息<br/>✅ 用户自己的信息<br/>✅ 获取某个用户上传的笔记<br/>✅ 获取某个用户所有的喜欢笔记<br/>✅ 获取某个用户所有的收藏笔记<br/>✅ 获取某个笔记的详细内容<br/>✅ 搜索笔记内容<br/>✅ 搜索用户内容<br/>✅ 获取某个笔记的评论<br/>✅ 获取未读消息信息<br/>✅ 获取收到的评论和@提醒信息<br/>✅ 获取收到的点赞和收藏信息<br/>✅ 获取新增关注信息|
+## 🎯 核心特性
+
+### 🖥️ 友好的GUI界面
+- **零编程基础** - 图形化操作，无需编写代码
+- **三步式工作流程** - 搜索 → JSON管理器 → 笔记爬取
+- **实时进度显示** - 可视化爬取进度和日志
+- **智能反爬虫** - 分步操作，降低被检测风险
+
+### 📊 强大的数据采集
+- **搜索爬取** - 根据关键词搜索笔记，支持多种排序方式
+- **笔记详情** - 获取笔记完整信息（标题、内容、作者、互动数据）
+- **媒体下载** - 自动下载高清图片和视频
+- **批量处理** - 支持批量爬取多个笔记
+
+### 💾 灵活的数据导出
+- **多种格式** - Excel、JSON、CSV任意选择
+- **结构化存储** - 自动分类整理数据和媒体文件
+- **JSON管理器** - 可视化管理搜索结果，提取笔记链接
 
 
-## 🌟 功能特性
+## 🌟 技术特性
 
-- ✅ **多维度数据采集**
-  - 用户主页信息
-  - 笔记详细内容
-  - 智能搜索结果抓取
-- 🚀 **高性能架构**
-  - 自动重试机制
-  - 速率限制保护（可配置）
-  - 连接池复用
-  - 断点续传支持
-- 🔒 **安全稳定**
-  - 小红书最新API适配
-  - 完善的异常处理机制
-- 🎨 **多种使用方式**
-  - 图形界面（GUI）- 无需编程，开箱即用
-  - 命令行（CLI）- 适合自动化脚本
-  - Python API - 灵活集成到你的项目
-  - 环境变量配置管理
-  - proxy代理支持
-- 🎨 **便捷管理**
-  - 结构化目录存储
-  - 多格式输出（JSON/CSV/EXCEL/MEDIA）
-  - 命令行界面（CLI）
-  - 进度跟踪和恢复
-- 🧪 **代码质量**
-  - 模块化架构设计
-  - 类型注解支持
-  - 单元测试覆盖
-  - 完善的日志系统
+- 🏗️ **模块化架构**
+  - 清晰的代码结构，易于维护和扩展
+  - 核心模块：配置管理、速率限制、错误处理、进度跟踪
   
-## 🎨效果图
-### 处理后的所有用户
-![image](https://github.com/cv-cat/Spider_XHS/assets/94289429/00902dbd-4da1-45bc-90bb-19f5856a04ad)
-### 某个用户所有的笔记
-![image](https://github.com/cv-cat/Spider_XHS/assets/94289429/880884e8-4a1d-4dc1-a4dc-e168dd0e9896)
-### 某个笔记具体的内容
-![image](https://github.com/cv-cat/Spider_XHS/assets/94289429/d17f3f4e-cd44-4d3a-b9f6-d880da626cc8)
-### 保存的excel
-![image](https://github.com/user-attachments/assets/707f20ed-be27-4482-89b3-a5863bc360e7)
+- 🛡️ **安全稳定**
+  - 智能速率限制，避免触发反爬虫
+  - 完善的错误处理和自动重试机制
+  - 断点续传，支持中断后继续
+  
+- 🎨 **多种使用方式**
+  - **GUI图形界面** - 推荐，无需编程基础
+  - **CLI命令行** - 适合自动化脚本
+  - **Python API** - 灵活集成到你的项目
+  
+- 📝 **完善的文档**
+  - 详细的使用教程
+  - 快速开始指南
+  - API文档和示例代码
+  
+## 🎨 GUI界面预览
 
-## 🛠️ 快速开始
-### ⛳运行环境
+### 配置页面
+![配置页面](https://github.com/cv-cat/Spider_XHS/assets/94289429/config-page.png)
+
+### 搜索爬取页面
+![搜索页面](https://github.com/cv-cat/Spider_XHS/assets/94289429/search-page.png)
+
+### JSON管理器页面
+![JSON管理器](https://github.com/cv-cat/Spider_XHS/assets/94289429/json-manager.png)
+
+### 笔记爬取页面
+![笔记爬取](https://github.com/cv-cat/Spider_XHS/assets/94289429/note-crawler.png)
+
+### 导出的Excel文件
+![Excel文件](https://github.com/user-attachments/assets/707f20ed-be27-4482-89b3-a5863bc360e7)
+
+## 🚀 快速开始
+
+### 📋 环境要求
 - Python 3.7+
-- Node.js 18+
+- Node.js 18+（用于签名算法）
 
-### 🎯安装依赖
-```
+### 📦 安装步骤
+
+#### 1. 安装依赖
+```bash
+# 安装Python依赖
 pip install -r requirements.txt
+
+# 安装Node.js依赖
 npm install
 ```
 
-### 🎨配置文件
+#### 2. 配置Cookie
 
-#### 方式一：使用环境变量（推荐）
+**在GUI中配置（最简单）：**
 
-1. 复制 `.env.example` 文件为 `.env`：
+1. 启动GUI：`python gui_main.py` 或双击 `启动GUI.bat`
+2. 在"配置"标签页点击"创建示例.env"
+3. 点击"打开.env文件"
+4. 将你的Cookie粘贴到 `COOKIES=` 后面
+5. 保存文件并点击"重新加载配置"
+
+**手动创建.env文件：**
+
 ```bash
+# 复制配置模板
 cp .env.example .env
 ```
 
-2. 编辑 `.env` 文件，填入你的配置：
-```bash
+在 `.env` 文件中填入：
+```env
 # 必填：小红书Cookie
 COOKIES='your_cookies_here'
 
-# 可选：速率限制（每秒请求数）
-RATE_LIMIT=3.0
+# 可选：速率限制（每秒请求数，建议1-3）
+RATE_LIMIT=1.0
 
 # 可选：请求超时时间（秒）
 TIMEOUT=30
@@ -110,70 +135,95 @@ TIMEOUT=30
 RETRY_TIMES=3
 ```
 
-3. **获取Cookie方法**：
-   - 登录小红书网页版
-   - 按 F12 打开浏览器开发者工具
-   - 点击"网络"（Network）标签
-   - 点击"Fetch/XHR"筛选
-   - 刷新页面，找到任意请求
-   - 在请求头中复制完整的 Cookie 值
+#### 3. 获取Cookie
 
-![image](https://github.com/user-attachments/assets/6a7e4ecb-0432-4581-890a-577e0eae463d)
+1. 打开小红书网页版：https://www.xiaohongshu.com
+2. 登录你的账号
+3. 按 `F12` 打开开发者工具
+4. 点击 `Network`（网络）标签
+5. 点击 `Fetch/XHR` 筛选
+6. 刷新页面（按 `F5`）
+7. 点击任意一个请求
+8. 在右侧找到 `Request Headers`
+9. 找到 `Cookie:` 字段
+10. 复制整个Cookie值
 
-复制cookie到.env文件中（注意！登录小红书后的cookie才是有效的，不登陆没有用）
-![image](https://github.com/user-attachments/assets/5e62bc35-d758-463e-817c-7dcaacbee13c)
+![获取Cookie](https://github.com/user-attachments/assets/6a7e4ecb-0432-4581-890a-577e0eae463d)
 
-#### 方式二：直接在代码中配置（兼容旧版本）
+**⚠️ 注意**：Cookie必须在登录状态下获取，未登录的Cookie无效！
 
-仍然支持在 `main.py` 中直接配置，详见下方运行项目部分。
+![复制Cookie](https://github.com/user-attachments/assets/5e62bc35-d758-463e-817c-7dcaacbee13c)
 
-### 🚀运行项目
+### 🎮 使用GUI（推荐）⭐
 
-#### 方式一：使用图形界面（GUI）- 最简单 ⭐
+#### 启动方式
 
-**适合不熟悉命令行的用户，提供友好的图形界面操作。**
-
-1. **启动GUI**：
-   ```bash
-   python gui_main.py
-   ```
-   
-   或者在Windows下直接双击 `启动GUI.bat` 文件
-
-2. **使用步骤**：
-   - 在"配置"页面加载配置（自动从.env读取）
-   - 选择功能页面（笔记爬取/用户爬取/搜索爬取）
-   - 输入相应的URL或关键词
-   - 选择保存格式和选项
-   - 点击"开始爬取"按钮
-   - 在"日志"页面查看实时进度
-
-3. **GUI功能**：
-   - ⚙️ 配置管理 - 可视化配置Cookie和参数
-   - 🔍 搜索爬取 - 搜索关键词，保存笔记列表为JSON
-   - 📁 JSON管理器 - 查看和提取笔记链接
-   - 📝 笔记爬取 - 批量下载完整笔记内容（图片/视频）
-   - 📋 实时日志 - 查看运行状态和错误信息
-
-**推荐工作流程**：
+**Windows用户（最简单）：**
 ```
-第一步：搜索爬取 → 获取笔记列表（JSON）
-第二步：JSON管理器 → 提取笔记链接
-第三步：笔记爬取 → 下载完整内容（图片/视频）
+双击 "启动GUI.bat" 文件
 ```
 
-详细使用说明请查看：[GUI使用指南](src/gui/README.md)
+**所有平台：**
+```bash
+python gui_main.py
+```
 
-#### 方式二：使用命令行（CLI）
+#### 三步式工作流程
 
-新版本提供了更友好的命令行界面：
+```
+┌─────────────────────────────────────────────────────────────┐
+│ 第一步：搜索爬取（获取笔记列表）                              │
+├─────────────────────────────────────────────────────────────┤
+│ • 输入关键词（如：重庆美食、旅游攻略）                        │
+│ • 设置数量（建议10-50，避免触发风控）                        │
+│ • 选择排序方式（综合/最新/最热）                             │
+│ • 点击"开始搜索（仅保存JSON）"                               │
+│ ↓                                                           │
+│ 保存到：datas/json_datas/search_关键词_时间.json             │
+└─────────────────────────────────────────────────────────────┘
+                          ↓
+┌─────────────────────────────────────────────────────────────┐
+│ 第二步：JSON管理器（提取笔记链接）                            │
+├─────────────────────────────────────────────────────────────┤
+│ • 点击"刷新列表"加载JSON文件                                 │
+│ • 选择要处理的JSON文件                                       │
+│ • 查看笔记列表（标题+链接）                                  │
+│ • 点击"复制所有链接"                                         │
+│ ↓                                                           │
+│ 链接已复制到剪贴板                                           │
+└─────────────────────────────────────────────────────────────┘
+                          ↓
+┌─────────────────────────────────────────────────────────────┐
+│ 第三步：笔记爬取（下载完整内容）                              │
+├─────────────────────────────────────────────────────────────┤
+│ • 粘贴链接（Ctrl+V，每行一个）                               │
+│ • 选择保存格式（Excel/JSON/CSV）                             │
+│ • 勾选"下载图片/视频"                                        │
+│ • 点击"开始爬取"                                             │
+│ ↓                                                           │
+│ 保存到：datas/excel_datas/ 和 datas/media_datas/            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### 为什么要分三步？
+
+✅ **避免触发风控** - 搜索时不下载媒体，请求更轻量  
+✅ **灵活筛选** - 可以先搜索多个关键词，再统一处理  
+✅ **可恢复性** - JSON文件持久化保存，中断后可继续  
+✅ **清晰流程** - 每个步骤职责明确，不会混乱  
+
+#### 详细教程
+
+- [GUI使用说明](GUI使用说明.md) - 完整的使用教程
+- [快速开始-GUI](快速开始-GUI.md) - 一分钟上手指南
+
+### 💻 使用CLI（适合开发者）
+
+命令行界面适合自动化脚本和批量处理：
 
 ```bash
-# 搜索笔记并保存
+# 搜索笔记
 python -m src.cli.main search "美食" --num 10 --format excel
-
-# 爬取用户所有笔记
-python -m src.cli.main user <user_url> --format json
 
 # 爬取指定笔记
 python -m src.cli.main note <note_url> --save-media
@@ -182,193 +232,171 @@ python -m src.cli.main note <note_url> --save-media
 python -m src.cli.main --help
 ```
 
-**CLI参数说明**：
-- `--num`: 搜索数量
-- `--format`: 输出格式（excel/json/csv）
-- `--save-media`: 是否下载媒体文件
-- `--resume`: 启用断点续传
-- `--sort`: 排序方式（综合/最新/最多点赞等）
-
-#### 方式二：使用传统方式（兼容旧版本）
-
-```bash
-python main.py
-```
-
-编辑 `main.py` 文件，根据需求选择功能：
-```python
-# 1. 爬取指定笔记列表
-notes = ['note_url_1', 'note_url_2']
-data_spider.spider_some_note(notes, cookies_str, base_path, 'all', 'test')
-
-# 2. 爬取用户所有笔记
-user_url = 'user_profile_url'
-data_spider.spider_user_all_note(user_url, cookies_str, base_path, 'all')
-
-# 3. 搜索关键词
-data_spider.spider_some_search_note("关键词", 10, cookies_str, base_path, 'all')
-```
-
-### 🗝️注意事项
-- **新版架构**：项目已重构为模块化架构，核心代码位于 `src/` 目录
-  - `src/core/`: 核心模块（配置、限流、错误处理、进度管理）
-  - `src/api/`: API接口层
-  - `src/data/`: 数据处理层（验证、处理、导出）
-  - `src/spider/`: 爬虫业务逻辑
-  - `src/cli/`: 命令行界面
-- **兼容性**：保留了 `main.py` 和 `apis/` 目录以兼容旧版本代码
-- **配置管理**：推荐使用 `.env` 文件管理配置，更安全便捷
-- **测试**：运行 `pytest` 执行单元测试
-
-
-## 📚 使用示例
-
-### 基础示例
+### 🐍 使用Python API（适合集成）
 
 ```python
 from src.spider.note_spider import NoteSpider
-from src.spider.user_spider import UserSpider
 from src.spider.search_spider import SearchSpider
 from src.core.config import ConfigManager
 
 # 加载配置
-config_manager = ConfigManager()
-config = config_manager.load_config()
+config = ConfigManager().load_config()
 
-# 1. 爬取单个笔记
+# 搜索笔记
+search_spider = SearchSpider(config)
+search_spider.search_notes("美食", num=20, save_format="excel")
+
+# 爬取单个笔记
 note_spider = NoteSpider(config)
 note_info = note_spider.crawl_note("note_url")
-
-# 2. 爬取用户笔记
-user_spider = UserSpider(config)
-user_spider.crawl_user_notes("user_url", save_format="excel")
-
-# 3. 搜索笔记
-search_spider = SearchSpider(config)
-search_spider.search_notes("关键词", num=20, save_format="json")
 ```
 
-### 高级功能
+详细API文档请查看：[开发者文档](src/README.md)
 
-```python
-# 断点续传
-note_spider.crawl_notes_batch(note_urls, resume=True)
 
-# 自定义导出格式
-from src.data.exporter import DataExporter, ExportFormat
+## 📁 输出文件结构
 
-exporter = DataExporter()
-exporter.export(data, "output.csv", format=ExportFormat.CSV)
+所有数据保存在 `datas` 目录：
 
-# 速率限制配置
-from src.core.rate_limiter import RateLimiter
-
-limiter = RateLimiter(rate=5.0)  # 每秒5个请求
+```
+datas/
+├── json_datas/              # 搜索结果（JSON格式）
+│   └── search_关键词_时间.json
+│
+├── excel_datas/             # 笔记详情（Excel格式）
+│   └── notes_时间.xlsx
+│
+├── csv_datas/               # 笔记详情（CSV格式）
+│   └── notes_时间.csv
+│
+└── media_datas/             # 媒体文件（图片/视频）
+    └── 笔记标题_笔记ID/
+        ├── detail.txt       # 笔记详情
+        ├── image_1.jpg      # 图片文件
+        ├── image_2.jpg
+        └── video_1.mp4      # 视频文件
 ```
 
-### 最佳实践
+## 💡 使用技巧
 
-1. **使用环境变量管理敏感信息**
-   - 不要将 Cookie 硬编码在代码中
-   - 使用 `.env` 文件，并确保它在 `.gitignore` 中
+### 1. 如何提高爬取效率？
 
-2. **合理设置速率限制**
-   - 默认 3 req/s 较为安全
-   - 过快可能导致账号被限制
+- **分批处理**：不要一次爬取太多，建议每次10-50个
+- **合理延迟**：在.env中设置 `RATE_LIMIT=1.0`（每秒1个请求）
+- **避开高峰**：在非高峰时段使用，减少被限制的风险
 
-3. **启用断点续传**
-   - 大批量爬取时建议启用
-   - 避免重复下载已完成的内容
+### 2. 如何避免被封号？
 
-4. **日志监控**
-   - 查看 `logs/` 目录下的日志文件
-   - 错误日志单独记录便于排查
+- **使用三步流程**：搜索时不下载媒体，降低请求频率
+- **控制数量**：每次搜索不超过50个笔记
+- **适当间隔**：操作之间适当休息，不要连续运行
+- **更新Cookie**：Cookie过期后及时更新
 
-## 🔄 迁移指南
+### 3. 如何批量处理？
 
-### 从旧版本迁移到新版本
+1. 先搜索多个关键词，保存多个JSON文件
+2. 在JSON管理器中逐个查看和筛选
+3. 最后批量爬取需要的笔记
 
-如果你正在使用旧版本的代码，可以按以下步骤迁移：
+### 4. 遇到问题怎么办？
 
-#### 1. 配置迁移
+1. 查看"日志"标签页的错误信息
+2. 检查Cookie是否有效（重新获取）
+3. 降低速率限制（增大RATE_LIMIT的值）
+4. 查看 [常见问题](GUI使用说明.md#常见问题)
+5. 在GitHub上提交Issue
 
-**旧版本**：
-```python
-cookies_str = "your_cookies"
+## 📖 文档导航
+
+- **[快速开始](QUICK_START.md)** - 5分钟快速上手
+- **[GUI使用说明](GUI使用说明.md)** - 详细的GUI使用教程
+- **[快速开始-GUI](快速开始-GUI.md)** - GUI一分钟上手
+- **[迁移指南](MIGRATION.md)** - 从旧版本迁移
+- **[更新日志](CHANGELOG.md)** - 版本更新记录
+- **[项目结构](PROJECT_STRUCTURE.md)** - 代码结构说明
+
+## 🔧 高级功能
+
+### 断点续传
+
+在.env中启用：
+```env
+ENABLE_RESUME=true
 ```
 
-**新版本**：
-```bash
-# .env 文件
-COOKIES='your_cookies'
+程序会记录已下载的笔记，重新运行时自动跳过。
+
+### 速率限制
+
+控制请求频率，避免被限制：
+```env
+RATE_LIMIT=1.0  # 每秒1个请求（推荐）
 ```
 
-#### 2. API调用迁移
+### 代理支持
 
-**旧版本**：
-```python
-from apis.xhs_pc_apis import XHS_Apis
-
-xhs_apis = XHS_Apis()
-success, msg, data = xhs_apis.get_note_info(url, cookies)
+在.env中配置代理：
+```env
+HTTP_PROXY=http://127.0.0.1:7890
+HTTPS_PROXY=http://127.0.0.1:7890
 ```
 
-**新版本**：
-```python
-from src.api.xhs_pc import XHSPCApi
-from src.core.config import ConfigManager
+### 批量处理
 
-config = ConfigManager().load_config()
-api = XHSPCApi(config)
-success, msg, data = api.get_note_info(url)
+支持批量输入笔记URL，每行一个：
+```
+https://www.xiaohongshu.com/explore/note_id_1
+https://www.xiaohongshu.com/explore/note_id_2
+https://www.xiaohongshu.com/explore/note_id_3
 ```
 
-#### 3. 数据处理迁移
+## 📝 常见问题
 
-**旧版本**：
-```python
-from xhs_utils.data_util import handle_note_info, save_to_xlsx
+### Q: 提示"配置加载失败"？
+**A**: 检查Cookie是否正确填写，是否已过期。Cookie必须在登录状态下获取。
 
-note_info = handle_note_info(raw_data)
-save_to_xlsx(notes, "output.xlsx")
+### Q: 爬取失败或没有数据？
+**A**: 
+1. 检查Cookie是否有效（重新获取）
+2. 检查网络连接
+3. 降低速率限制（增大RATE_LIMIT的值）
+4. 查看日志页面的错误详情
+
+### Q: 如何提高爬取速度？
+**A**: 在.env中适当提高速率限制，但不要太高：
+```env
+RATE_LIMIT=2.0  # 每秒2个请求
 ```
 
-**新版本**：
-```python
-from src.data.processor import DataProcessor
-from src.data.exporter import DataExporter, ExportFormat
+### Q: Cookie多久会过期？
+**A**: Cookie的有效期不固定，通常几天到几周。过期后需要重新获取。
 
-processor = DataProcessor()
-note_info = processor.process_note(raw_data)
+### Q: 可以同时运行多个实例吗？
+**A**: 不建议。同时运行多个实例可能触发风控，导致账号被限制。
 
-exporter = DataExporter()
-exporter.export(notes, "output.xlsx", format=ExportFormat.EXCEL)
-```
+### Q: 支持哪些数据格式？
+**A**: 支持Excel（.xlsx）、JSON（.json）、CSV（.csv）三种格式。
 
-#### 4. 兼容性说明
+更多问题请查看：[GUI使用说明 - 常见问题](GUI使用说明.md#常见问题)
 
-- ✅ **完全兼容**：`main.py` 和 `apis/` 目录保持不变，旧代码可以继续运行
-- ⚠️ **建议迁移**：新版本提供更好的错误处理、速率限制和数据验证
-- 📝 **逐步迁移**：可以在同一项目中混用新旧API，逐步迁移
+## 🔄 版本历史
 
-## 🍥日志
-   
-| 日期       | 说明                                        |
-|----------|-------------------------------------------|
-| 23/08/09 | - 首次提交                                    |
-| 23/09/13 | - api更改params增加两个字段，修复图片无法下载，有些页面无法访问导致报错 |
-| 23/09/16 | - 较大视频出现编码问题，修复视频编码问题，加入异常处理              |
-| 23/09/18 | - 代码重构，加入失败重试                             |
-| 23/09/19 | - 新增下载搜索结果功能                              |
-| 23/10/05 | - 新增跳过已下载功能，获取更详细的笔记和用户信息                 |
-| 23/10/08 | - 上传代码☞Pypi，可通过pip install安装本项目           |
-| 23/10/17 | - 搜索下载新增排序方式选项（1、综合排序 2、热门排序 3、最新排序）      |
-| 23/10/21 | - 新增图形化界面,上传至release v2.1.0               |
-| 23/10/28 | - Fix Bug 修复搜索功能出现的隐藏问题                   |
-| 25/03/18 | - 更新API，修复部分问题                            |
-| 25/06/07 | - 更新search接口，区分视频和图集下载，增加小红书创作者api        |
-| 25/07/15 | - 更新 xs version56 & 小红书创作者接口              |
-| 25/11/12 | - 🎉 重大更新：模块化架构重构<br/>- 新增CLI命令行界面<br/>- 新增速率限制和错误处理<br/>- 新增断点续传功能<br/>- 新增多格式导出（JSON/CSV/Excel）<br/>- 新增单元测试<br/>- 改进配置管理（环境变量）<br/>- 完善日志系统<br/>- 保持向后兼容 |
+### v2.2.0 (2024-11-16) - 当前版本
+- 🎉 GUI工作流程优化
+- 📁 新增JSON管理器功能
+- 🔄 三步式工作流程
+- 📖 完善文档
+
+### v2.1.0 (2024-11-12)
+- 🏗️ 模块化架构重构
+- 💻 新增CLI命令行界面
+- 🛡️ 速率限制和错误处理
+- 💾 断点续传功能
+
+### v2.0.0 (2023-10-21)
+- 🎨 新增图形化界面
+
+查看完整更新日志：[CHANGELOG.md](CHANGELOG.md)
 
 
 ## 🧸额外说明
@@ -397,3 +425,70 @@ exporter.export(notes, "output.xlsx", format=ExportFormat.EXCEL)
 <img width="1031" height="1449" alt="5355a0f82398ee2052f2e659328d737b" src="https://github.com/user-attachments/assets/ea690f33-0c5f-4941-9332-de9feff838e7" />
 
 
+
+## 🤝 贡献指南
+
+欢迎提交Issue和Pull Request！
+
+### 如何贡献
+
+1. Fork本项目
+2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交Pull Request
+
+### 开发环境
+
+```bash
+# 安装开发依赖
+pip install -r requirements-dev.txt
+
+# 运行测试
+pytest
+
+# 查看测试覆盖率
+pytest --cov=src --cov-report=html
+```
+
+## 📄 许可证
+
+本项目仅供学习交流使用，请勿用于商业用途。
+
+## 🙏 致谢
+
+感谢所有贡献者和使用者的支持！
+
+### 特别感谢
+
+- 感谢star⭐和follow📰
+- 欢迎PR和Issue
+- 如果此项目对您有帮助，请考虑赞助支持 ☕
+
+<div align="center">
+  <img src="./author/wx_pay.png" width="350px" alt="微信赞赏码"> 
+  <img src="./author/zfb_pay.jpg" width="350px" alt="支付宝收款码">
+</div>
+
+## 📈 Star 趋势
+
+<a href="https://www.star-history.com/#cv-cat/Spider_XHS&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=cv-cat/Spider_XHS&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=cv-cat/Spider_XHS&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=cv-cat/Spider_XHS&type=Date" />
+ </picture>
+</a>
+
+## 💬 交流群
+
+<div align="center">
+  <img width="400" alt="微信交流群" src="https://github.com/user-attachments/assets/ea690f33-0c5f-4941-9332-de9feff838e7" />
+</div>
+
+---
+
+<div align="center">
+  <p><strong>如果这个项目对你有帮助，请给一个Star⭐</strong></p>
+  <p>Made with ❤️ by cv-cat</p>
+</div>
